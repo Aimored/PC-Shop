@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ETIC1lByRVY=",
+  "dgSpecHash": "LXQna3Cv7tk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aimor\\Desktop\\PC\\PcShop\\PcShop.csproj",
+  "projectFilePath": "C:\\Users\\Aimor\\Documents\\GitHub\\PC-Shop\\PcShop\\PcShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aimor\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.13\\microsoft.entityframeworkcore.8.0.13.nupkg.sha512",
     "C:\\Users\\Aimor\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.13\\microsoft.entityframeworkcore.abstractions.8.0.13.nupkg.sha512",
