@@ -1,0 +1,50 @@
+@model List<PcShop.Models.Product>
+
+@{
+    ViewData["Title"] = "Каталог";
+}
+
+<h1>Каталог товаров</h1>
+
+<input type="text" id="searchBox" class="form-control mb-3" placeholder="Поиск по названию товара..." />
+
+<div class="row" id="productContainer">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 mb-4">
+            <div class="card h-100">
+                <a href="@Url.Action("Details", "Product", new { id = item.Id })" style="text-decoration: none; color: inherit;">
+                    <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: cover;" />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">Цена: @item.Price ₽</p>
+                        <p class="card-text">В наличии: @item.Stock шт.</p>
+                    </div>
+                </a>
+                <div class="card-footer bg-white border-0">
+                    @if (item.Stock > 0)
+                    {
+                        <button class="btn btn-primary w-100 add-to-cart" data-id="@item.Id">В корзину</button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-secondary w-100" disabled>Нет в наличии</button>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@section Scripts {
+    <script>
+        document.getElementById("searchBox").addEventListener("input", function () {
+            const query = this.value;
+            fetch(`/Catalog/Search?query=${encodeURIComponent(query)}`)
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("productContainer").innerHTML = html;
+                });
+        });
+    </script>
+}

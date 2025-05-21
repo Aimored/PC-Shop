@@ -1,0 +1,383 @@
+Структура папок тома Windows 10
+Серийный номер тома: 5E0D-E375
+C:.
+|   appsettings.Development.json
+|   appsettings.json
+|   PcShop.csproj
+|   Program.cs
+|   structure.txt
+|   
++---bin
+|   \---Debug
+|       +---net8.0
+|       |   +---cs
+|       |   +---de
+|       |   +---es
+|       |   +---fr
+|       |   +---it
+|       |   +---ja
+|       |   +---ko
+|       |   +---pl
+|       |   +---pt-BR
+|       |   +---ru
+|       |   +---runtimes
+|       |   |   \---browser
+|       |   |       \---lib
+|       |   |           \---net8.0
+|       |   +---tr
+|       |   +---zh-Hans
+|       |   \---zh-Hant
+|       \---net9.0
+|           |   appsettings.Development.json
+|           |   appsettings.json
+|           |   BouncyCastle.Cryptography.dll
+|           |   Google.Protobuf.dll
+|           |   K4os.Compression.LZ4.dll
+|           |   K4os.Compression.LZ4.Streams.dll
+|           |   K4os.Hash.xxHash.dll
+|           |   Microsoft.EntityFrameworkCore.Abstractions.dll
+|           |   Microsoft.EntityFrameworkCore.dll
+|           |   Microsoft.EntityFrameworkCore.Relational.dll
+|           |   Microsoft.Extensions.Caching.Abstractions.dll
+|           |   Microsoft.Extensions.Caching.Memory.dll
+|           |   Microsoft.Extensions.Configuration.Abstractions.dll
+|           |   Microsoft.Extensions.DependencyInjection.Abstractions.dll
+|           |   Microsoft.Extensions.DependencyInjection.dll
+|           |   Microsoft.Extensions.Logging.Abstractions.dll
+|           |   Microsoft.Extensions.Logging.dll
+|           |   Microsoft.Extensions.Options.dll
+|           |   Microsoft.Extensions.Primitives.dll
+|           |   MySql.Data.dll
+|           |   MySql.EntityFrameworkCore.dll
+|           |   MySqlConnector.dll
+|           |   PcShop.deps.json
+|           |   PcShop.dll
+|           |   PcShop.exe
+|           |   PcShop.pdb
+|           |   PcShop.runtimeconfig.json
+|           |   PcShop.staticwebassets.endpoints.json
+|           |   PcShop.staticwebassets.runtime.json
+|           |   Pomelo.EntityFrameworkCore.MySql.dll
+|           |   System.Configuration.ConfigurationManager.dll
+|           |   System.Security.Cryptography.ProtectedData.dll
+|           |   System.Security.Permissions.dll
+|           |   System.Windows.Extensions.dll
+|           |   ZstdSharp.dll
+|           |   
+|           \---runtimes
+|               +---win
+|               |   \---lib
+|               |       \---net8.0
+|               |               System.Windows.Extensions.dll
+|               |               
+|               \---win-x64
+|                   \---native
+|                           comerr64.dll
+|                           gssapi64.dll
+|                           k5sprt64.dll
+|                           krb5_64.dll
+|                           krbcc64.dll
+|                           
++---Controllers
+|       Accauntcontroller.cs
+|       CartController.cs
+|       CatalogController.cs
+|       HomeController.cs
+|       OrderController.cs
+|       
++---data
+|       ApplicationDbContext.cs
+|       
++---Extensions
+|       SessionExtensions.cs
+|       
++---Models
+|   |   CartItem.cs
+|   |   ErrorViewModel.cs
+|   |   Order.cs
+|   |   OrderItem.cs
+|   |   Product.cs
+|   |   ProductSpecValue.cs
+|   |   ProductType.cs
+|   |   Specification.cs
+|   |   tovar.cs
+|   |   User.cs
+|   |   
+|   \---ViewModel
+|           RegisterViewModel.cs
+|           UserProfileViewModel.cs
+|           
++---obj
+|   |   PcShop.csproj.EntityFrameworkCore.targets
+|   |   PcShop.csproj.nuget.dgspec.json
+|   |   PcShop.csproj.nuget.g.props
+|   |   PcShop.csproj.nuget.g.targets
+|   |   project.assets.json
+|   |   project.nuget.cache
+|   |   
+|   \---Debug
+|       +---net8.0
+|       |   |   .NETCoreApp,Version=v8.0.AssemblyAttributes.cs
+|       |   |   apphost.exe
+|       |   |   PcShop.AssemblyInfo.cs
+|       |   |   PcShop.AssemblyInfoInputs.cache
+|       |   |   PcShop.assets.cache
+|       |   |   PcShop.csproj.AssemblyReference.cache
+|       |   |   PcShop.csproj.CoreCompileInputs.cache
+|       |   |   PcShop.csproj.FileListAbsolute.txt
+|       |   |   PcShop.GeneratedMSBuildEditorConfig.editorconfig
+|       |   |   PcShop.GlobalUsings.g.cs
+|       |   |   PcShop.MvcApplicationPartsAssemblyInfo.cache
+|       |   |   PcShop.RazorAssemblyInfo.cache
+|       |   |   PcShop.RazorAssemblyInfo.cs
+|       |   |   
+|       |   +---ref
+|       |   +---refint
+|       |   +---scopedcss
+|       |   |   +---bundle
+|       |   |   +---projectbundle
+|       |   |   \---Views
+|       |   |       \---Shared
+|       |   \---staticwebassets
+|       \---net9.0
+|           |   .NETCoreApp,Version=v9.0.AssemblyAttributes.cs
+|           |   apphost.exe
+|           |   PcShop.AssemblyInfo.cs
+|           |   PcShop.AssemblyInfoInputs.cache
+|           |   PcShop.assets.cache
+|           |   PcShop.csproj.AssemblyReference.cache
+|           |   PcShop.csproj.CoreCompileInputs.cache
+|           |   PcShop.csproj.FileListAbsolute.txt
+|           |   PcShop.csproj.Up2Date
+|           |   PcShop.dll
+|           |   PcShop.GeneratedMSBuildEditorConfig.editorconfig
+|           |   PcShop.genruntimeconfig.cache
+|           |   PcShop.GlobalUsings.g.cs
+|           |   PcShop.MvcApplicationPartsAssemblyInfo.cache
+|           |   PcShop.pdb
+|           |   PcShop.RazorAssemblyInfo.cache
+|           |   PcShop.RazorAssemblyInfo.cs
+|           |   staticwebassets.build.endpoints.json
+|           |   staticwebassets.build.json
+|           |   staticwebassets.development.json
+|           |   staticwebassets.pack.json
+|           |   
+|           +---compressed
+|           |       0bejx1od6j-y7v9cxd14o.gz
+|           |       0yp2d97wkf-356vix0kms.gz
+|           |       21qqfyhm8d-o1o13a6vjx.gz
+|           |       2iviki9y6i-ttgo8qnofa.gz
+|           |       2jmfbjtie9-c2oey78nd0.gz
+|           |       2vwiug4sbt-0i3buxo5is.gz
+|           |       3tcsrjbga9-ee0r1s7dh0.gz
+|           |       4d0kkvy4x0-83jwlth58m.gz
+|           |       4m1hmckzek-fvhpjtyr6v.gz
+|           |       4pwhj3umqr-1u5gigolh4.gz
+|           |       4ralkkqf5j-jd9uben2k1.gz
+|           |       5gg7fl3a2d-6cfz1n2cew.gz
+|           |       5t6cx8mxa8-ft3s53vfgj.gz
+|           |       660vpok7wv-4v8eqarkd7.gz
+|           |       6l9fggqu3e-b7pk76d08c.gz
+|           |       6o0b8why21-pj5nd1wqec.gz
+|           |       7474kjad7a-ag7o75518u.gz
+|           |       7pxc0cpmkg-muycvpuwrr.gz
+|           |       7rpbcum80t-hrwsygsryq.gz
+|           |       9tepdkzom1-pk9g2wxc8p.gz
+|           |       a0bc9yyijb-37tfw0ft22.gz
+|           |       ahyq3aze4g-ausgxo2sd3.gz
+|           |       b4mb5dmrnp-c2jlpeoesf.gz
+|           |       cqbce92mga-nvvlpmu67g.gz
+|           |       csmsfes734-kbrnm935zg.gz
+|           |       ea9ut3hpy4-lcd1t2u6c8.gz
+|           |       ffsejvsab6-cosvhxvwiu.gz
+|           |       g7z7vhx1k5-mlv21k5csn.gz
+|           |       grsxcnxu9p-06098lyss8.gz
+|           |       hkbtv5sygm-tdbxkamptv.gz
+|           |       hyd8qv5154-1u5gigolh4.gz
+|           |       i7yuhd1k3g-63fj8s7r0e.gz
+|           |       iw0ne8xlpc-jj8uyg4cgr.gz
+|           |       izflr0y57x-x0q3zqp4vz.gz
+|           |       j9fkyrkwyp-d7shbmvgxk.gz
+|           |       jhrj22md5s-v0zj4ognzu.gz
+|           |       jyspoi8ur0-notf2xhcfb.gz
+|           |       kj3igy7b8l-bqjiyaj88i.gz
+|           |       kt99fd6ea7-s35ty4nyc5.gz
+|           |       ls5hd0qbuo-r4e9w2rdcm.gz
+|           |       nm9kf9ff7i-87fc7y1x7t.gz
+|           |       nt9g3e2akt-ub07r2b239.gz
+|           |       o2chg3cgks-aexeepp0ev.gz
+|           |       o7gn7y8fd5-vr1egmr9el.gz
+|           |       pw9mgh6uhu-493y06b0oq.gz
+|           |       r2ahsxnj1k-h1s4sie4z3.gz
+|           |       rjasndmnwj-rzd6atqjts.gz
+|           |       ruoewmbbfc-0j3bgjxly4.gz
+|           |       s1lrph8tzq-mrlpezrjn3.gz
+|           |       s2hjl9gq4y-j5mq2jizvt.gz
+|           |       sln0xboppx-xtxxf3hu2r.gz
+|           |       sq4aj7x9q5-2z0ns9nrw6.gz
+|           |       srwkf9eaa9-k8d9w2qqmf.gz
+|           |       utbudg9vzq-fsbi9cje9m.gz
+|           |       uu9yld5w9g-dxx9fxp4il.gz
+|           |       vffeugpc4l-iovd86k7lj.gz
+|           |       vp4wt3b4xz-47otxtyo56.gz
+|           |       wbdc4lqz6e-khv3u5hwcm.gz
+|           |       wo4l6yqs92-lzl9nlhx6b.gz
+|           |       wt8vepeu6t-61n19gt1b8.gz
+|           |       xgmcvgzd5h-4spox0ela1.gz
+|           |       y6jc3ajw5x-46ein0sx1k.gz
+|           |       yemaccbq1p-erw9l3u2r3.gz
+|           |       zbrsqxkhxo-6pdc2jztkx.gz
+|           |       
+|           +---ref
+|           |       PcShop.dll
+|           |       
+|           +---refint
+|           |       PcShop.dll
+|           |       
+|           +---scopedcss
+|           |   +---bundle
+|           |   |       PcShop.styles.css
+|           |   |       
+|           |   +---projectbundle
+|           |   |       PcShop.bundle.scp.css
+|           |   |       
+|           |   \---Views
+|           |       \---Shared
+|           |               _Layout.cshtml.rz.scp.css
+|           |               
+|           \---staticwebassets
+|                   msbuild.build.PcShop.props
+|                   msbuild.buildMultiTargeting.PcShop.props
+|                   msbuild.buildTransitive.PcShop.props
+|                   msbuild.PcShop.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+|                   msbuild.PcShop.Microsoft.AspNetCore.StaticWebAssets.props
+|                   
++---Properties
+|       launchSettings.json
+|       
++---Views
+|   |   Success.cshtml
+|   |   _ViewImports.cshtml
+|   |   _ViewStart.cshtml
+|   |   
+|   +---Account
+|   |       Login.cshtml
+|   |       profile.cshtml
+|   |       Register.cshtml
+|   |       
+|   +---cart
+|   |       Index.cshtml
+|   |       _CartItems.cshtml
+|   |       
+|   +---Catalog
+|   |       Index.cshtml
+|   |       _ProductList.cshtml
+|   |       
+|   +---Home
+|   |       Index.cshtml
+|   |       Privacy.cshtml
+|   |       
+|   +---order
+|   |       Checkout.cshtml
+|   |       
+|   \---Shared
+|           Error.cshtml
+|           _Layout.cshtml
+|           _Layout.cshtml.css
+|           _ValidationScriptsPartial.cshtml
+|           
+\---wwwroot
+    |   favicon.ico
+    |   
+    +---css
+    |       site.css
+    |       
+    +---images
+    |       2060s.png
+    |       banner1.jpg
+    |       banner2.jpg
+    |       logo.png
+    |       
+    +---js
+    |       site.js
+    |       
+    \---lib
+        +---bootstrap
+        |   |   LICENSE
+        |   |   
+        |   \---dist
+        |       +---css
+        |       |       bootstrap-grid.css
+        |       |       bootstrap-grid.css.map
+        |       |       bootstrap-grid.min.css
+        |       |       bootstrap-grid.min.css.map
+        |       |       bootstrap-grid.rtl.css
+        |       |       bootstrap-grid.rtl.css.map
+        |       |       bootstrap-grid.rtl.min.css
+        |       |       bootstrap-grid.rtl.min.css.map
+        |       |       bootstrap-reboot.css
+        |       |       bootstrap-reboot.css.map
+        |       |       bootstrap-reboot.min.css
+        |       |       bootstrap-reboot.min.css.map
+        |       |       bootstrap-reboot.rtl.css
+        |       |       bootstrap-reboot.rtl.css.map
+        |       |       bootstrap-reboot.rtl.min.css
+        |       |       bootstrap-reboot.rtl.min.css.map
+        |       |       bootstrap-utilities.css
+        |       |       bootstrap-utilities.css.map
+        |       |       bootstrap-utilities.min.css
+        |       |       bootstrap-utilities.min.css.map
+        |       |       bootstrap-utilities.rtl.css
+        |       |       bootstrap-utilities.rtl.css.map
+        |       |       bootstrap-utilities.rtl.min.css
+        |       |       bootstrap-utilities.rtl.min.css.map
+        |       |       bootstrap.css
+        |       |       bootstrap.css.map
+        |       |       bootstrap.min.css
+        |       |       bootstrap.min.css.map
+        |       |       bootstrap.rtl.css
+        |       |       bootstrap.rtl.css.map
+        |       |       bootstrap.rtl.min.css
+        |       |       bootstrap.rtl.min.css.map
+        |       |       
+        |       \---js
+        |               bootstrap.bundle.js
+        |               bootstrap.bundle.js.map
+        |               bootstrap.bundle.min.js
+        |               bootstrap.bundle.min.js.map
+        |               bootstrap.esm.js
+        |               bootstrap.esm.js.map
+        |               bootstrap.esm.min.js
+        |               bootstrap.esm.min.js.map
+        |               bootstrap.js
+        |               bootstrap.js.map
+        |               bootstrap.min.js
+        |               bootstrap.min.js.map
+        |               
+        +---jquery
+        |   |   LICENSE.txt
+        |   |   
+        |   \---dist
+        |           jquery.js
+        |           jquery.min.js
+        |           jquery.min.map
+        |           jquery.slim.js
+        |           jquery.slim.min.js
+        |           jquery.slim.min.map
+        |           
+        +---jquery-validation
+        |   |   LICENSE.md
+        |   |   
+        |   \---dist
+        |           additional-methods.js
+        |           additional-methods.min.js
+        |           jquery.validate.js
+        |           jquery.validate.min.js
+        |           
+        \---jquery-validation-unobtrusive
+            |   LICENSE.txt
+            |   
+            \---dist
+                    jquery.validate.unobtrusive.js
+                    jquery.validate.unobtrusive.min.js
+                    

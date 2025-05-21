@@ -1,0 +1,44 @@
+@model List<PcShop.Models.CartItem>
+@{
+    ViewData["Title"] = "Корзина";
+}
+
+<h1>Ваша корзина</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Название</th>
+            <th>Цена</th>
+            <th>Количество</th>
+            <th>Итого</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Price ₽</td>
+                <td>@item.Quantity</td>
+                <td>@(item.Price * item.Quantity) ₽</td>
+                <td>
+                    <form asp-action="Remove" asp-controller="Cart" method="post">
+                        <input type="hidden" name="id" value="@item.ProductId" />
+                        <button class="btn btn-danger btn-sm">Удалить</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (Model.Any())
+{
+    <h3>Общая сумма: @(Model.Sum(item => item.Price * item.Quantity)) ₽</h3>
+    <a class="btn btn-success" asp-controller="Order" asp-action="Checkout">Оформить заказ</a>
+}
+else
+{
+    <p>Ваша корзина пуста.</p>
+}

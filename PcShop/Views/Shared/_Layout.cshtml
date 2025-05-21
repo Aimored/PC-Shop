@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PcShop</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PcShop.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header style="background-color: #333; padding: 1rem; color: white;">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <!-- Логотип -->
+            <div class="d-flex align-items-center mb-2 mb-md-0">
+                <a href="/">
+                    <img src="~/images/logo.png" alt="Логотип" width="40" height="40" class="me-2" style="border-radius: 5px;">
+                </a>
+                <h1 class="h5 m-0">PC Shop</h1>
+            </div>
+
+            <!-- Навигация -->
+            <nav class="d-flex gap-3 align-items-center">
+                <a href="/" class="text-white text-decoration-none">Главная</a>
+
+                <!-- Выпадающий Каталог -->
+                <div class="dropdown">
+                    <a class="dropdown-toggle text-white text-decoration-none" href="#" role="button" id="catalogDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Каталог
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="catalogDropdown">
+                        <li><a class="dropdown-item" href="/Catalog?typeId=1">Процессоры</a></li>
+                        <li><a class="dropdown-item" href="/Catalog?typeId=2">Видеокарты</a></li>
+                        <li><a class="dropdown-item" href="/Catalog?typeId=3">Материнские платы</a></li>
+                        <li><a class="dropdown-item" href="/Catalog?typeId=4">Оперативная память</a></li>
+                    </ul>
+                </div>
+
+                <a asp-controller="Cart" asp-action="Index" class="text-white text-decoration-none">Корзина</a>
+
+                @if (Context.Session.GetInt32("UserId") != null)
+                {
+                    <a href="@Url.Action("Profile", "Account")" class="text-white text-decoration-none">Личный кабинет</a>
+                    <a href="@Url.Action("Logout", "Account")" class="text-white text-decoration-none">Выйти</a>
+                }
+                else
+                {
+                    <a href="@Url.Action("Login", "Account")" class="text-white text-decoration-none">Вход</a>
+                    <a href="@Url.Action("Register", "Account")" class="text-white text-decoration-none ms-3">Регистрация</a>
+                }
+            </nav>
+
+        </div>
+    </header>
+
+    <main role="main" class="pb-3 container mt-3">
+        @RenderBody()
+    </main>
+
+    <footer class="bg-light text-center py-3 mt-5">
+        <p>© 2025 PC Shop — все права защищены</p>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

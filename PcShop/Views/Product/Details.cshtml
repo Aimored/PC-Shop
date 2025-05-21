@@ -1,0 +1,36 @@
+@model PcShop.Models.Product
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<h2>@Model.Name</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="@Model.ImageUrl" class="img-fluid" alt="@Model.Name" />
+    </div>
+    <div class="col-md-6">
+        <h4>Цена: @Model.Price ₽</h4>
+        <p>В наличии: @Model.Stock шт.</p>
+        <p>Тип: @Model.Type?.Name</p>
+
+        <h5>Характеристики:</h5>
+        <ul>
+            @foreach (var spec in Model.Specifications)
+            {
+                <li>
+                    @spec.Specification.Name: @spec.Value @spec.Specification.Unit
+                </li>
+            }
+        </ul>
+
+        @if (Model.Stock > 0)
+        {
+            <button class="btn btn-primary">Добавить в корзину</button>
+        }
+        else
+        {
+            <button class="btn btn-secondary" disabled>Нет в наличии</button>
+        }
+    </div>
+</div>

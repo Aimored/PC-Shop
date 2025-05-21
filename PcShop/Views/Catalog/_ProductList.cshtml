@@ -1,0 +1,26 @@
+@model List<PcShop.Models.Product>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3 mb-4">
+            <div class="card h-100">
+                <img src="@item.ImageUrl" class="card-img-top" alt="@item.Name" style="height: 200px; object-fit: cover;" />
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">Цена: @item.Price ₽</p>
+                    <p class="card-text">В наличии: @item.Stock шт.</p>
+
+                    @if (item.Stock > 0)
+                    {
+                        <button class="btn btn-primary add-to-cart" data-id="@item.Id">В корзину</button>
+                    }
+                    else
+                    {
+                        <button class="btn btn-secondary" disabled>Нет в наличии</button>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>

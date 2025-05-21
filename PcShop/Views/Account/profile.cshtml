@@ -1,0 +1,27 @@
+@using PcShop.Models
+@using PcShop.Models.ViewModels
+@model UserProfileViewModel
+
+@{
+    ViewData["Title"] = "Личный кабинет";
+}
+
+<h2>Добро пожаловать, @Model.User.Username</h2>
+<p>Email: @Model.User.Email</p>
+
+<h3>Ваши заказы:</h3>
+@if (Model.Orders.Any())
+{
+    <ul>
+        @foreach (PcShop.Models.Order order in Model.Orders)
+        {
+            <li>Заказ №@order.OrderId от @order.OrderDate.ToShortDateString()</li>
+        }
+    </ul>
+}
+else
+{
+    <p>У вас пока нет заказов.</p>
+}
+
+<a href="@Url.Action("Logout", "Account")" class="btn btn-danger">Выйти</a>

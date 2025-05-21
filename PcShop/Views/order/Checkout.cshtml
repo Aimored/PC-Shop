@@ -1,0 +1,28 @@
+@model List<PcShop.Models.CartItem>
+@{
+    ViewData["Title"] = "Оформление заказа";
+}
+<h2>Оформление заказа</h2>
+
+<form asp-action="Confirm" method="post">
+    <!-- Поля для имени и email убраны -->
+
+    <table class="table">
+        <thead>
+            <tr><th>Товар</th><th>Цена</th><th>Количество</th><th>Сумма</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Price ₽</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.Price * item.Quantity) ₽</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <button type="submit" class="btn btn-success">Подтвердить заказ</button>
+</form>

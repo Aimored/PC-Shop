@@ -1,0 +1,19 @@
+@model List<PcShop.Models.CartItem>
+
+<div class="cart-items">
+    <h3>Корзина</h3>
+    @foreach (var item in Model)
+    {
+        <div class="cart-item">
+            <p>@item.Name - @item.Quantity шт. - @item.Price ₽</p>
+            <form asp-action="Remove" asp-route-id="@item.ProductId" method="post">
+                <button type="submit" class="btn btn-danger">Удалить</button>
+            </form>
+        </div>
+    }
+</div>
+
+@if (!Model.Any())
+{
+    <p>Корзина пуста.</p>
+}
