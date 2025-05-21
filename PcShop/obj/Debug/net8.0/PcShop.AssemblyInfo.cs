@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PcShop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa9ace3d446f19425a09e8ce0df741ddae85c04c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7fa8aa5ede6d7aa96bca3ae4433d2d4ede841146")]
 [assembly: System.Reflection.AssemblyProductAttribute("PcShop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PcShop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
